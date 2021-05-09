@@ -1,0 +1,18 @@
+#searchText{
+    opacity: 1.0;
+    border-radius: 1px solid;
+}
+
+#movies img, #movie img{
+    width:100%;
+    
+}
+
+@media(min-width:960px){
+    #movies .col-md-3 .well{
+        height: 450px;
+    }
+    #movies .col-md-3 img{
+        height: 310px;
+    }
+}
