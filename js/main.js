@@ -11,7 +11,7 @@ const apikey='4dcad61a';
 function getMovies(searchText)
 {
     
-    axios.get('http://omdbapi.com?apikey='+apikey+'&s='+searchText)
+    axios.get('https://omdbapi.com?apikey='+apikey+'&s='+searchText)
     .then((response)=>{
        console.log(response);
        let movies=response.data.Search;
@@ -48,7 +48,7 @@ function movieSelected(id){
 
 function getMovie(){
     let movieId=sessionStorage.getItem('movieId');
-    axios.get('http://omdbapi.com?apikey='+apikey+'&i='+movieId)
+    axios.get('https://omdbapi.com?apikey='+apikey+'&i='+movieId)
     .then((response)=>{
        console.log(response);
        let  movie=response.data;
